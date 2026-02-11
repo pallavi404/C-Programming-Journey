@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+	int r,c;
+	printf("enter r and c : ");
+	scanf("%d%d",&r,&c);
+	int i,j;
+	
+	for(i=1;i<=r;i++){
+		for(j=1;j<=r;j++){
+			if(i==j || i+j == r+1) printf("*");
+			else printf(" ");
+		}
+		printf("\n");
+	}
+}
