@@ -1,16 +1,18 @@
 #include<stdio.h>
 int main(){
-	int r ,c;
-	printf("enter r and c : ");
+	int i,j,n=1;
+	int r,c,k;
+	
+	printf("enter row and column : ");
 	scanf("%d%d",&r,&c);
-	int i,j;
-	char ch='A';
 	for(i=1;i<=r;i++){
-		char ch = 'A';
-		for(j=0;j<i;j++){
-			printf("%c",ch);
-			ch++;
+		for(j=1;j<=r-i;j++){
+			printf(" ");
 		}
+		for(k=1;k<=2*i-1;k++){
+			printf("%d",n);
+		}
+		n++;
 		printf("\n");
 	}
 }

@@ -1,24 +1,15 @@
+//24
 #include<stdio.h>
 int main(){
-
-int r ,c;
-	printf("enter r and c : ");
+	int i,j,n=1;
+	int r,c,k;
+	
+	printf("enter row and column : ");
 	scanf("%d%d",&r,&c);
-	int i,j;
-	for(i=0;i<=r;i++){
-		char ch = 'A';
-		if(i%2==0){
-			for(j=1;j<=i;j++){
-				printf("%c",ch);
-				ch++;
-			}
-		}
-		else {
-			for(j=1;j<=i;j++){
-				printf("%d",j);
-			}
+	for(i=r;i>=1;i--){
+		for(j=1;j<=i;j++){
+			printf("%d",i);
 		}
 		printf("\n");
 	}
-	
 }
